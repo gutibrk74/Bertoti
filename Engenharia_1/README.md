@@ -1,5 +1,4 @@
  <h1 align = center >Resumos<h1>
-   ---
   
 # Atividade 1
 
