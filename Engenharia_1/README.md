@@ -2,6 +2,7 @@
   
 # Atividade 1
 
+---
 ## Texto 1 - Definindo Engenharia de Software
 What precisely do we mean by software engineering? What distinguishes “software engineering” from “programming” or “computer science”? And why would Google have a unique perspective to add to the corpus of previous software engineering literature written over the past 50 years?
  
@@ -11,9 +12,9 @@ The terms “programming” and “software engineering” have been used interc
  
 Unlike those more established engineering professions, current software engineering theory or practice is not nearly as rigorous. Aeronautical engineers must follow rigid guidelines and practices, because errors in their calculations can cause real damage; programming, on the whole, has traditionally not followed such rigorous practices. But, as software becomes more integrated into our lives, we must adopt and rely on more rigorous engineering methods. We hope this book helps others see a path toward more reliable software practices.
 
-1. -> A engenharia de software envolve mais do que apenas escrever código. Ela inclui a criação de sistemas complexos e confiáveis, utilizando princípios de engenharia. Embora o termo "programação" tenha sido usado de forma intercambiável com "engenharia de software" ao longo do tempo, há uma diferença importante. A programação se concentra na criação de código, enquanto a engenharia de software abrange todo o processo de desenvolvimento de um sistema, desde o planejamento até a manutenção.
+1. -> O texto aborda as distinções entre os termos "programação", "ciência da computação" e "engenharia de software", destacando que, embora muitas vezes usados como sinônimos, cada um possui um escopo específico. Programação está relacionada à escrita de código, enquanto ciência da computação foca nos fundamentos teóricos que sustentam a área. Já a engenharia de software envolve uma abordagem mais ampla e estruturada, voltada para o desenvolvimento de sistemas complexos e confiáveis com base em princípios de engenharia. O texto também enfatiza que, apesar de a engenharia de software ainda não ser tão rigorosa quanto outras engenharias tradicionais, como a aeronáutica ou civil, a crescente dependência de sistemas digitais exige práticas mais robustas e responsáveis.
 
-### Resumo:
+### Legenda:
 - **Programação**: Foco em escrever código.
 - **Engenharia de Software**: Criação de sistemas robustos e sustentáveis com base em princípios de engenharia.
 - **Ciência da Computação**: Fundamentos teóricos que sustentam a programação e a engenharia de software.
