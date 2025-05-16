@@ -2,7 +2,6 @@
   
 # Atividade 1
 
----
 ## Texto 1 - Definindo Engenharia de Software
 What precisely do we mean by software engineering? What distinguishes “software engineering” from “programming” or “computer science”? And why would Google have a unique perspective to add to the corpus of previous software engineering literature written over the past 50 years?
  
@@ -39,15 +38,12 @@ How an organization will need to adapt as it evolves
 Trade-offs and Costs
 How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth.
 
-2. -> A engenharia de software vai além da simples escrita de código. Ela envolve todos os processos e ferramentas utilizadas para construir e manter o código ao longo do tempo. A principal questão aqui é como garantir que o código seja valioso a longo prazo, sustentável e capaz de se adaptar às mudanças. Um ponto fundamental abordado no livro é a ideia de que a engenharia de software pode ser vista como "programação integrada ao longo do tempo". O código precisa ser sustentável, reagindo de forma eficaz às mudanças necessárias durante seu ciclo de vida, desde sua concepção até sua descontinuação.
+2. -> A engenharia de software abrange muito mais do que apenas escrever código: ela envolve o conjunto de práticas, ferramentas e processos usados para criar, manter e evoluir sistemas ao longo do tempo. Um dos principais desafios é garantir que o código continue relevante, sustentável e adaptável diante de mudanças constantes. A experiência do Google sugere que a engenharia de software pode ser entendida como “programação integrada ao longo do tempo”, destacando a importância de práticas que assegurem a capacidade do código de evoluir durante todo seu ciclo de vida — da concepção à manutenção e eventual descontinuação.
 
 ### Três Princípios Fundamentais:
-1. **Tempo e Mudança**: O código precisa ser adaptável ao longo do tempo.
-2. **Escala e Crescimento**: A organização precisa evoluir à medida que o software cresce.
-3. **Compensações e Custos**: A organização deve equilibrar decisões com base nos princípios de tempo, mudança, escala e crescimento.
-
-### Resumo:
-O texto destaca que a engenharia de software envolve mais do que escrever código, incluindo a manutenção e adaptação do código ao longo do tempo. O Google compartilha sua experiência para ajudar a tornar o código mais sustentável. Os três princípios principais são: adaptar o código às mudanças, crescer conforme a organização evolui e tomar decisões equilibrando custos e trade-offs.
+1. **Tempo e Mudança**: Que trata da necessidade de adaptar o código à medida que ele envelhece;
+2. **Escala e Crescimento**: Que aborda como a organização deve evoluir junto com o sistema;
+3. **Compensações e Custos**: Que envolve a tomada de decisões equilibradas com base nas consequências e exigências das mudanças e do crescimento.
 
 ---
 # Atividade 3
@@ -57,22 +53,22 @@ O texto destaca que a engenharia de software envolve mais do que escrever códig
 Durante o desenvolvimento de software, os engenheiros precisam tomar decisões que envolvem trade-offs, isto é, escolher entre opções que trazem diferentes benefícios e desafios. Aqui estão alguns exemplos de trade-offs comuns:
 
 ### 1. Linguagem de Programação:
-- **Exemplo**: Python é mais fácil de aprender e programar, mas Java oferece melhor desempenho.
-  - **Trade-off**: Facilitar a aprendizagem pode comprometer a performance a longo prazo, enquanto optar por uma linguagem de alto desempenho pode ser mais difícil de aprender.
+- **Exemplo**: Usar Python facilita o desenvolvimento e o aprendizado, mas pode comprometer o desempenho em aplicações mais exigentes.
+  - **Trade-off**: Facilidade de uso vs. performance
 
 ### 2. Segurança:
-- **Exemplo**: Aplicar fortes medidas de segurança pode dificultar a experiência do usuário.
-  - **Trade-off**: A segurança mais robusta reduz o risco de ataques, mas pode tornar o sistema menos acessível ou intuitivo para os usuários.
+- **Exemplo**: Reforçar a segurança do sistema protege contra ataques, mas pode tornar a navegação e a usabilidade mais difíceis para o usuário final.
+  - **Trade-off**: Proteção do sistema vs. experiência do usuário.
 
 ### 3. Custo vs Qualidade:
-- **Exemplo**: Reduzir custos pode ser vantajoso no curto prazo.
-  - **Trade-off**: No longo prazo, isso pode resultar em mais problemas técnicos, que terão um custo maior para corrigir.
+- **Exemplo**: Economizar no desenvolvimento pode reduzir despesas no início, mas aumenta o risco de falhas técnicas no futuro.
+  - **Trade-off**: Investimento inicial menor vs. manutenção e qualidade a longo prazo.
 
 ---
 
 ## Conclusão
 
-A engenharia de software é uma disciplina complexa e em evolução. A chave para garantir que o software seja sustentável e adaptável ao longo do tempo é a integração de práticas rigorosas e o equilíbrio entre as compensações que surgem no desenvolvimento de sistemas. O Google, com sua experiência em ambientes de grande escala, oferece uma valiosa perspectiva sobre como navegar essas questões. O importante é ter um sistema de ponto a ponto simples (sistema completo) de começo e não partes de um sistema e "juntar". 
+A engenharia de software é uma área dinâmica que exige muito mais do que domínio técnico: ela demanda escolhas estratégicas. Durante o ciclo de vida de um sistema, os engenheiros constantemente enfrentam decisões difíceis, nas quais não é possível obter todos os benefícios ao mesmo tempo — surgem, então, os trade-offs. Saber identificar, avaliar e equilibrar essas compensações é essencial para garantir que o software seja sustentável, seguro, eficiente e adaptável no longo prazo. Com base na experiência de organizações como o Google, percebemos que boas decisões começam desde a concepção do sistema como um todo, e não apenas com partes isoladas que são conectadas depois. Um sistema bem planejado desde o início é mais fácil de manter e evoluir.
 
 ---
 
