@@ -78,3 +78,126 @@ A engenharia de software é uma área dinâmica que exige muito mais do que dom�
 
 # Uma boa explicação para a relação demonstrada na imagem é o MVP (Minimum Viable Product), ou em português, Produto Viável Mínimo, que serve para gerenciar um produto de forma que ele sempre atenda ao seu propósito principal, mesmo sendo a versão mais simples daquele produto.
 Como o exemplo na imagem de um carro, que serve para se locomover, se visarmos apenas a construção de nosso produto (o carro) e não a resolução do problema principal de nossos clientes (se locomover), estaríamos perdendo clientes, já que levaríamos mais tempo construindo um veículo do que atualizando um já existente para que, ao final, cheguemos ao produto final. Dessa forma, é possível que nosso cliente já consiga resolver seu problema enquanto o produto ainda está em desenvolvimento.
+
+---
+
+# Atividade do Codigo
+
+## Codigo da Main.java
+```Java
+package at_bertoti;
+
+public class Main {
+    public static void main(String[] args) {
+        Estoque estoque = new Estoque();
+
+        Produto p1 = new Produto("T-72 Ural", 1010123);
+        Produto p2 = new Produto("43M Turan III", 12345678);
+
+        estoque.addProduto(p1);
+        estoque.addProduto(p2);
+
+        System.out.println("Produtos no estoque:");
+        for (Produto p : estoque.getProdutos()) {
+            System.out.println("Nome: " + p.getNome() + " | Código: " + p.getCodigo());
+        }
+
+        int codigoBuscado = 12345678;
+        Produto encontrado = estoque.buscarProdutoCodigo(codigoBuscado);
+        if (encontrado != null) {
+            System.out.println("\nProduto encontrado com código " + codigoBuscado + ": " + encontrado.getNome());
+        } else {
+            System.out.println("\nProduto com código " + codigoBuscado + " não encontrado.");
+        }
+    }
+}
+```
+
+## Codigo da Teste.java
+```Java
+package at_bertoti;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class Teste {
+    
+    @Test
+    public void teste() {
+        Estoque estoque = new Estoque();
+        estoque.addProduto(new Produto("T-72 Урал", 1010123));
+        estoque.addProduto(new Produto("43M Turan III", 12345678));
+
+        assertEquals(2, estoque.getProdutos().size());
+
+        Produto produto = estoque.buscarProdutoCodigo(12345678);
+        assertEquals("43M Turan III", produto.getNome());
+    }
+}
+```
+
+## Codigo da Produto.java
+```Java
+package at_bertoti;
+
+public class Produto {
+    private String nome;
+    private int codigo;
+
+    public Produto(String nome, int codigo) {
+	this.nome = nome;
+	this.codigo = codigo;
+    }
+
+    public String getNome() {
+	return nome;
+    }
+    public void setNome(String nome) {
+	this.nome = nome;
+    }
+    public int getCodigo() {
+	return codigo;
+    }
+    public void setCodigo(int codigo) {
+	this.codigo = codigo;
+    }
+}
+```
+
+## Codigo da Estoque.java
+```Java
+package at_bertoti;
+
+import java.util.List; import java.util.LinkedList;
+
+public class Estoque {
+    private List<Produto> produtos = new LinkedList<Produto>();
+
+    public void addProduto(Produto produto) {
+        produtos.add(produto);
+    }
+
+    public Produto buscarProdutoCodigo(int codigo) {
+        for (Produto produto : produtos) {
+            if (produto.getCodigo() == codigo) {
+                return produto;
+            }
+        }
+        return null;
+    }
+
+    public List<Produto> buscarProdutoNome(String nome) {
+        List<Produto> encontrados = new LinkedList<Produto>();
+        for (Produto produto : produtos) {
+            if (produto.getNome().equalsIgnoreCase(nome)) {
+                encontrados.add(produto);
+            }
+        }
+        return encontrados;
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+}
+```
